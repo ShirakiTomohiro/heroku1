@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ProfilesHistoriesTable extends Migration
+class ProfilesHistorieTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class ProfilesHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('histories', function (Blueprint $table) {
+        Schema::create('historie', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('news_id')->nullable();
-            $table->integer('profiles_id')->nullable();
+            $table->integer('profiles_id');
             $table->string('edited_at');
 
             $table->timestamps();
@@ -30,6 +29,6 @@ class ProfilesHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('histories');
+        Schema::dropIfExists('historie');
     }
 }

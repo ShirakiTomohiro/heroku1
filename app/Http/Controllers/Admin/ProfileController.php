@@ -76,10 +76,10 @@ print_r($profiles);
       $profiles->fill($profiles_form)->save();
 
       //以下を追記
-      $histories = new Historie;
-      $histories->profiles_id = $profiles->id;
-      $histories->edited_at = Carbon::now();
-      $histories->save();
+      $historie = new Historie;
+      $historie->profiles_id = $profiles->id;
+      $historie->edited_at = Carbon::now();
+      $historie->save();
 
     return redirect('admin/profile/edit?id='.$request->id);
   }
