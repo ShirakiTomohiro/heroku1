@@ -35,8 +35,8 @@
                                 <th width="20%">name</th>
                                 <th width="10%">gender</th>
                                 <th width="20%">hobby</th>
-                                <th width="50">introduction</th>
-                                <th width="10%">操作</th>
+                                <th width="20%">introduction</th>
+                                <th width="40%">操作</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -53,7 +53,6 @@ class ProfileController extends Controller
   {
       // Profile Modelからデータを所得する
       $profiles = Profiles::find($request->id);
-print_r($profiles);
       if (empty($profiles)) {
         //abort(404);
       }
