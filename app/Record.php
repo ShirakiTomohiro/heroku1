@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Historie extends Model
+class Record extends Model
 {
-    protected $guarded = array('id');
+    protected $table = 'record';
 
     public static $rules = array(
         'profiles_id' => 'required',

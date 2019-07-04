@@ -55,9 +55,9 @@ method="post" enctype="multipart/form-data">
                   <div class="col-md-4 mx-auto">
                       <h2>編集履歴</h2>
                       <ul class="list-group">
-                         @if ($profiles_form->historie != NULL)
-                            @foreach ($profiles_form->historie as $historie)
-                         <li class="list-group-item">{{ $historie->edited_at }}</li>
+                         @if ($profiles_form->record != NULL)
+                            @foreach ($profiles_form->record as $records)
+                         <li class="list-group-item">{{ $records->edited_at }}</li>
                             @endforeach
                          @endif
                       </ul>
